@@ -1,0 +1,67 @@
+<form [formGroup]="formGroup" (ngSubmit)="cadastrar()" class="form-group">
+
+  
+  <!-- Input -->
+  <label>CPF</label>
+  <input type="text" formControlName="cpf" class="form-control" />
+  <small class="form-text text-muted" *ngIf="formGroup.controls.cpf.dirty && formGroup.controls.cpf.errors">
+  Valor Inválido
+  </small>
+  <!-- / -->
+
+  <!-- Input -->
+  <label>Nome</label>
+  <input type="text" formControlName="nome" class="form-control" />
+  <small class="form-text text-muted" *ngIf="formGroup.controls.nome.dirty && formGroup.controls.nome.errors">
+  Valor Inválido
+  </small>
+  <!-- / -->
+
+  <!-- Input -->
+  <label>Endereço</label>
+  <input type="text" formControlName="endereco" class="form-control" />
+  <small class="form-text text-muted" *ngIf="formGroup.controls.endereco.dirty && formGroup.controls.endereco.errors">
+  Valor Inválido
+  </small>
+  <!-- / -->
+
+  <!-- Input -->
+  <label>Municipio</label>
+  <input type="text" formControlName="municipio" class="form-control" />
+  <small class="form-text text-muted" *ngIf="formGroup.controls.municipio.dirty && formGroup.controls.municipio.errors">
+  Valor Inválido
+  </small>
+  <!-- / -->
+
+  <!-- Input -->
+  <label>Estado</label>
+  <input type="text" formControlName="estado" class="form-control" />
+  <small class="form-text text-muted" *ngIf="formGroup.controls.estado.dirty && formGroup.controls.estado.errors">
+  Valor Inválido
+  </small>
+  <!-- / -->
+  
+  <!-- Input -->
+  <label>Telefone</label>
+  <input type="text" formControlName="telefone" class="form-control" />
+  <small class="form-text text-muted" *ngIf="formGroup.controls.telefone.dirty && formGroup.controls.telefone.errors">
+  Valor Inválido
+  </small>
+  <!-- / -->
+  
+  <!-- Input -->
+  <label>Email</label>
+  <input type="text" formControlName="email" class="form-control" />
+  <small class="form-text text-muted" *ngIf="formGroup.controls.email.dirty && formGroup.controls.email.errors">
+  Valor Inválido
+  </small>
+  <!-- / -->
+
+  <!-- Input -->
+  <label>Senha</label>
+  <input type="text" formControlName="senha" class="form-control" />
+  <small class="form-text text-muted" *ngIf="formGroup.controls.senha.dirty && formGroup.controls.senha.errors">
+  Valor Inválido
+  </small>
+  <!-- / -->
+</form>

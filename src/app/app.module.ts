@@ -4,17 +4,27 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './/app-routing.module';
+import { ListaAlunosComponent } from './lista-alunos/lista-alunos.component';
+import { AlunoService } from "./services/aluno.servive";
+import { HttpClientModule } from "@angular/common/http";
+import { CadastroComponent } from './cadastro/cadastro.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ClienteService } from "./services/cliente.service";
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ListaAlunosComponent,
+    CadastroComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [AlunoService, ClienteService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
